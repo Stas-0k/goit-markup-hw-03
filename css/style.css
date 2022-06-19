@@ -24,6 +24,7 @@ body {
   line-height: 1.71;
 }
 
+
 .container {
   width: 1200px;
   margin-left: auto;
@@ -37,6 +38,10 @@ body {
   padding: 0px;
   margin: 0px;
   list-style: none;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  margin-top: 0px;
 }
 
 /*логотип*/
@@ -56,7 +61,19 @@ body {
 
 /*менюшка*/
 
+.site-nav {
+  display: flex;
+}
+
+.site-nav .item:not(:last-child) {
+  margin-right: 50px;
+}
+
 .site-nav .link {
+
+  display: block;
+  padding: 32px;
+ 
   color: var(--title-text-color);
 
   font-weight: 500;
@@ -67,6 +84,12 @@ body {
 .site-nav .link:hover,
 .site-nav .link:focus {
   color: var(--accent-color);
+}
+
+
+
+.auth .item + .item {
+  margin-left: 50px;
 }
 
 .auth .link {
@@ -81,7 +104,21 @@ body {
 .auth .link:focus {
   color: var(--accent-color);
 }
+.main-nav {
+  display: flex;
+  align-items: center;
+}
+.auth {
+  display: flex;
+align-items: center;
+margin-left: auto;
+}
 
+.menu {
+  display: flex;
+  align-items: center;
+ 
+}
 
 .hero {
   text-align: center;
@@ -102,8 +139,10 @@ body {
 }
 
 .section .button {
+
   border-radius: 4px;
   min-width: 200px;
+  padding: 10px 32px;
 
   color: var(--primary-white-color);
   background-color: var(--accent-color);
@@ -118,6 +157,9 @@ body {
 }
 
 .section .title {
+  margin-top: 0px;
+  margin-bottom: 50px;
+
   color: var(--title-text-color);
 
   font-weight: 700;
@@ -127,6 +169,9 @@ body {
 }
 
 .section .head-name {
+  margin-top: 94px;
+  margin-bottom: 10px;
+
   color: var(--title-text-color);
 
   font-size: 14px;
@@ -135,7 +180,61 @@ body {
   text-transform: uppercase;
 }
 
+.adv-flex {
+  display: flex;  
+}
+
+.adv-flex .item {
+  width: 270px;
+  align-items: center;
+  }
+
+  .adv-flex .item:not(:last-child) {
+    margin-right: 30px;
+  }
+  
+
+.list p {
+  margin-bottom: 94px;
+}
+
+.cont-work {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.cont-work p {
+  margin-top: 0px;
+  margin-bottom: 124px;
+}
+
+.work {
+  display: flex;
+}
+
+.work .item:not(:last-child) {
+  margin-right: 30px;
+}
+
+
+.cont-command {
+  padding-top: 94px;
+  padding-bottom: 94px;
+  text-align: center;
+}
+
+.command {
+  display: flex;
+}
+
+.command .item:not(:last-child) {
+  margin-right: 30px;
+}
+
 .section .head-team {
+  margin-top: 30px;
+  margin-bottom: 10px;
+
   color: var(--title-text-color);
 
   font-weight: 500;
@@ -191,11 +290,14 @@ body {
 }
 
 .portfolio-button {
+  padding: 6px 22px;
+  min-width: 14px;
+  margin-bottom: 94px;
+
   color: var(--title-text-color);
   background-color: var(--background-button);
 
   cursor: pointer;
-
   font-family: inherit;
   font-weight: 500;
   font-size: 16px;
@@ -208,7 +310,20 @@ body {
   background-color: var(--accent-color);
 }
 
+.portfolio-menu {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+}
+
+.portfolio-menu .item:not(:last-child) {
+  margin-right: 8px;
+}
+
 .portfolio-head {
+  margin-top: 20px;
+  margin-bottom: 4px;
+
   color: var(--title-text-color);
 
   font-weight: 700;
@@ -218,6 +333,8 @@ body {
 }
 
 .portfolio-link {
+  margin-top: 0px;
+
   color: var(--primary-text-color);
 
   font-size: 16px;
@@ -235,4 +352,18 @@ body {
     font-weight: 500;
     line-height: 1.14;
     letter-spacing: 0.02em;
+}
+
+.portfolio {
+  margin-top: 94px;
+  margin-bottom: 94px;
+}
+
+.main-portfolio {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.main-portfolio .item:not(:nth-child(3n)) {
+  margin-right: 30px;
 }
