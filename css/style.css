@@ -280,6 +280,13 @@ margin-left: auto;
   font-style: normal;
 }
 
+.foot-main {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+
+
 .link,
 .list {
   text-decoration: none;
