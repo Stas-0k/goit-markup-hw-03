@@ -52,7 +52,7 @@ ul {
 /*логотип*/
 .logo {
   margin-right: 93px;
-  padding: 32px;
+  
 
   color: var(--title-text-color);
   font-family: Raleway, sans-serif;
@@ -210,6 +210,10 @@ ul {
   margin-bottom: 94px;
 }
 
+.list .portfolio-link {
+  margin-bottom: 20px;
+}
+
 .cont-work {
   padding-top: 94px;
   padding-bottom: 94px;
@@ -329,7 +333,7 @@ ul {
 .portfolio-button {
   padding: 6px 22px;
   min-width: 14px;
-  margin-bottom: 94px;
+  margin-bottom: 50px;
 
   color: var(--title-text-color);
   background-color: var(--background-button);
@@ -399,8 +403,14 @@ ul {
 .main-portfolio {
   display: flex;
   flex-wrap: wrap;
+  margin: -15px;
 }
 
-.main-portfolio .item:not(:nth-child(3n)) {
-  margin-right: 30px;
+.main-portfolio .item {
+  width: 370px;
+  margin: 15px;
+}
+
+.main-portfolio .item:nth-child(3n)  {
+  margin-right: 0px;
 }
