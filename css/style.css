@@ -47,6 +47,7 @@ h6,
 p,
 ul {
   margin-top: 0px;
+  margin-bottom: 0px;
 }
 
 /*логотип*/
@@ -64,6 +65,9 @@ ul {
 }
 
 .logo-foot {
+  display: block;
+  margin-bottom: 20px;
+
   color: var(--title-text-color);
   font-family: Raleway, sans-serif;
 
@@ -75,6 +79,10 @@ ul {
 
 .logo-img {
   color: var(--accent-color);
+}
+
+.header {
+  border-bottom: 1px solid;
 }
 
 /*менюшка*/
@@ -89,7 +97,7 @@ ul {
 
 .site-nav .link {
   display: block;
-  padding: 32px;
+  padding: 32px 0px;
 
   color: var(--title-text-color);
 
@@ -108,6 +116,8 @@ ul {
 }
 
 .auth .link {
+  display: block;
+  padding: 32px 0px;
   color: var(--primary-text-color);
 
   font-weight: 500;
@@ -134,8 +144,14 @@ ul {
   align-items: center;
 }
 
+.second {
+  padding-top: 94px;
+}
+
 .hero {
   text-align: center;
+  background-color: var(--background-hero);
+  padding: 200px 0px;
 }
 
 .section .hero-header {
@@ -143,7 +159,7 @@ ul {
   margin-bottom: 30px;
 
   color: var(--primary-white-color);
-  background-color: var(--background-hero);
+  
 
   font-weight: 900;
   font-size: 44px;
@@ -182,7 +198,7 @@ ul {
 }
 
 .section .head-name {
-  margin-top: 94px;
+  
   margin-bottom: 10px;
 
   color: var(--title-text-color);
@@ -206,15 +222,12 @@ ul {
   margin-right: 30px;
 }
 
-.list p {
-  margin-bottom: 94px;
-}
 
 .list .portfolio-link {
   margin-bottom: 20px;
 }
 
-.cont-work {
+.third {
   padding-top: 94px;
   padding-bottom: 94px;
 }
@@ -232,7 +245,7 @@ ul {
   margin-right: 30px;
 }
 
-.cont-command {
+.fourth {
   padding-top: 94px;
   padding-bottom: 94px;
   text-align: center;
@@ -247,7 +260,6 @@ ul {
 }
 
 .section .head-team {
-  margin-top: 30px;
   margin-bottom: 10px;
 
   color: var(--title-text-color);
@@ -257,30 +269,23 @@ ul {
   line-height: 1.19;
 }
 
+.command-cont {
+  padding: 30px 0px;
+}
+
 .section .description {
   font-size: 16px;
   line-height: 1.19;
 }
 
 .footer {
-  display: flex;
-  align-items: center;
-  padding-top: 60px;
+   padding-top: 60px;
   padding-bottom: 60px;
    background-color: var(--background-hero);
 }
 
 
-.footer-primary {
- display: flex;
-  margin-top: 20px;
-  margin-bottom: 9px;
-}
 
-.foot .item:not(:last-child) {
-  /*display: flex;*/
-  margin-bottom: 9px;
-}
 
 .footer .footer-main {
   color: var(--primary-white-color);
@@ -319,6 +324,9 @@ ul {
   padding-bottom: 60px;
 }
 
+.foot .item:not(:last-child) {
+  margin-bottom: 9px;
+}
 
 
 .link,
@@ -333,7 +341,7 @@ ul {
 .portfolio-button {
   padding: 6px 22px;
   min-width: 14px;
-  margin-bottom: 50px;
+  border: none;
 
   color: var(--title-text-color);
   background-color: var(--background-button);
@@ -355,6 +363,7 @@ ul {
   display: flex;
   text-align: center;
   justify-content: center;
+  margin-bottom: 50px;
 }
 
 .portfolio-menu .item:not(:last-child) {
@@ -362,9 +371,7 @@ ul {
 }
 
 .portfolio-head {
-  margin-top: 20px;
   margin-bottom: 4px;
-
   color: var(--title-text-color);
 
   font-weight: 700;
@@ -374,8 +381,6 @@ ul {
 }
 
 .portfolio-link {
-  margin-top: 0px;
-
   color: var(--primary-text-color);
 
   font-size: 16px;
@@ -395,9 +400,8 @@ ul {
   letter-spacing: 0.02em;
 }
 
-.portfolio {
-  margin-top: 94px;
-  margin-bottom: 94px;
+.sec-port {
+  padding: 94px 0px;
 }
 
 .main-portfolio {
@@ -411,6 +415,9 @@ ul {
   margin: 15px;
 }
 
-.main-portfolio .item:nth-child(3n)  {
-  margin-right: 0px;
+.fifth {
+  padding: 20px 24px;
+  border-bottom: 1px solid #EEEEEE;
+  border-right: 1px solid #EEEEEE;
+  border-left: 1px solid #EEEEEE;
 }
