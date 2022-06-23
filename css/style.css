@@ -411,3 +411,7 @@ ul {
     border-left: 1px solid #eeeeee;
   padding: 20px 24px;
 }
+
+.image-portfolio {
+  display: block;
+}
